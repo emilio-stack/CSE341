@@ -20,17 +20,17 @@ GET http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d88
 
 // PRODUCTION
 ###
-GET https://personalactivity1.onrender.com/contacts 
+GET https://personal-activity.onrender.com/contacts 
 # returns a json object with contacts
 
 ###
-GET https://personalactivity1.onrender.com/contacts/632c9c8c8d13bdbb2e6d5d86 
+GET https://personal-activity.onrender.com/contacts/632c9c8c8d13bdbb2e6d5d86 
 # returns single object id for carver
 
 ###
-GET https://personalactivity1.onrender.com/contacts/632c9c8c8d13bdbb2e6d5d87
+GET https://personal-activity.onrender.com/contacts/632c9c8c8d13bdbb2e6d5d87
 # returns single object id for noah
 
 ###
-GET https://personalactivity1.onrender.com/contacts/632c9c8c8d13bdbb2e6d5d88
+GET https://personal-activity.onrender.com/contacts/632c9c8c8d13bdbb2e6d5d88
 #returns single object id for dominic
