@@ -1,9 +1,6 @@
-/**
- * The file that contains all of the routes of the application
- */
-const router = require('express').Router();
-const { index } = require("../controllers/index")
+const express = require('express');
+const router = express.Router();
 
-router.get('/', index);     // use controller architecture to handle route logic
+router.use('/contacts', require('./contacts'))
 
 module.exports = router;

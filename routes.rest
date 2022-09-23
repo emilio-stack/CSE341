@@ -1,0 +1,16 @@
+// LOCALHOST
+###
+GET http://localhost:8080/contacts
+# the request above returns a json object with contacts
+
+###
+GET http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d86
+# returns single object id for carver
+
+###
+GET http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d87
+# returns single object id for noah
+
+###
+GET http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d88
+# returns single object id for dominc

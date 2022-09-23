@@ -1,13 +1,23 @@
-/**
- * The file that contains the main entry point to the application.
- */
 const express = require('express');
+const bodyParser = require('body-parser');
+const mongodb = require('./db/connect');
+
+const port = process.env.PORT || 8080;
 const app = express();
-const port = 3000;
-const routes = require("./routes/index");
 
-app.use(routes);        // use routes to direct application traffic
+app
+  .use(bodyParser.json())
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
+  .use('/', require('./routes'));
 
-app.listen(port, () => {
-    console.log(`Personal Assignment 1 listening on port http://localhost:3000/`);
-})
+mongodb.initDb((err, mongodb) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port);
+    console.log(`Connected to DB and listening on http://localhost:8080/`);
+  }
+});
