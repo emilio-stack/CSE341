@@ -1,11 +1,10 @@
-const { response } = require('express');
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 /**
  * Get all contacts
  */
-const getAll = async (req, res, next) => {
+const getAll = async (req, res) => {
   const result = await mongodb.getDb().db('personal2').collection('contacts').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -16,7 +15,7 @@ const getAll = async (req, res, next) => {
 /**
  * Get single contact by id
  */
-const getSingle = async (req, res, next) => {
+const getSingle = async (req, res) => {
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
