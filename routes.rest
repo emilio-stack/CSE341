@@ -15,6 +15,33 @@ GET http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d87
 GET http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d88
 # returns single object id for dominc
 
+###
+POST http://localhost:8080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Dr",
+    "lastName": "Dunn",
+    "email": "thedoctor@test.com",
+    "favoriteColor": "red",
+    "birthday": "07/23/00"
+}
+
+###
+PUT http://localhost:8080/contacts/632c9c8c8d13bdbb2e6d5d86 HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "carver",
+    "lastName": "fife",
+    "email": "carvertheballer@test.com",
+    "favoriteColor": "pink",
+    "birthday": "07/21/02"
+}
+
+###
+DELETE http://localhost:8080/contacts/633538bbd3a3db521ca3b5ee
+
 
 
 
