@@ -5,7 +5,7 @@
     "description": "A REST API for contacts from my mission",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": " ",
   "basePath": "/",
   "schemes": [
     "http"
