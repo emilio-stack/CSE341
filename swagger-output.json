@@ -5,10 +5,10 @@
     "description": "A REST API for contacts from my mission",
     "version": "1.0.0"
   },
-  "host": "https://personal-activity.onrender.com",
+  "host": " ",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/contacts/": {
