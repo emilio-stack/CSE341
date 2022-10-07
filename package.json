@@ -1,5 +1,5 @@
 {
-  "name": "Contacts API",
+  "name": "REST-contacts",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
