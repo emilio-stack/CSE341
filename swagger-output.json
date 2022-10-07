@@ -5,10 +5,10 @@
     "description": "A REST API for contacts from my mission",
     "version": "1.0.0"
   },
-  "host": " ",
+  "host": "https://personal-activity.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/contacts/": {
@@ -21,6 +21,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -79,6 +82,9 @@
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
