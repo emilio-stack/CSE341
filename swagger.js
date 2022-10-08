@@ -5,8 +5,8 @@ const doc = {
     title: 'Contacts API',
     description: 'A REST API for contacts from my mission',
   },
-  host: ' ',
-  schemes: ['http', 'https'],
+  host: '',
+  schemes: ['https', 'http'],
 };
 
 const outputFile = './swagger-output.json';

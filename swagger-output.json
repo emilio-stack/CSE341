@@ -5,11 +5,11 @@
     "description": "A REST API for contacts from my mission",
     "version": "1.0.0"
   },
-  "host": " ",
+  "host": "",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/contacts/": {
